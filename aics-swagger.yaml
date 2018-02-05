@@ -61,24 +61,8 @@ definitions:
     properties:
       type:
         type: string
-      structured:
-        $ref: '#/definitions/StructuredMessage'
       unstructured:
         $ref: '#/definitions/UnstructuredMessage'
-  StructuredMessage:
-    type: object
-    properties:
-      id:
-        type: string
-      text:
-        type: string
-      type:
-        type: string
-      payload:
-        type: object
-      timestamp:
-        type: string
-        format: datetime
   UnstructuredMessage:
     type: object
     properties:
